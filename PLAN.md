@@ -1,9 +1,8 @@
-# 📋 PLAN.md — Hệ thống Chứng thực & Xác thực số (Proof of Existence)
+# 📋 Hệ thống Chứng thực & Xác thực số (Proof of Existence)
 
 > **Project Codename**: `proof-of-existence`
 > **Created**: 2026-08-31
 > **Status**: 🟡 Planning
-> **Author**: AI Architect (Planner)
 
 ---
 
@@ -649,19 +648,7 @@ graph TD
 
 ---
 
-## 6. Estimated Timeline
-
-| Phase   | Tasks       | Est. Duration |
-| ------- | ----------- | ------------- |
-| Phase 1 | Task 1–3    | 2–3 ngày      |
-| Phase 2 | Task 4–5    | 1–2 ngày      |
-| Phase 3 | Task 6–7    | 2–3 ngày      |
-| Phase 4 | Task 8–10   | 2–3 ngày      |
-| **Tổng** |            | **7–11 ngày** |
-
----
-
-## 7. Risk & Mitigation
+## 6. Risk & Mitigation
 
 | Risk | Impact | Mitigation |
 | ---- | ------ | ---------- |
@@ -672,5 +659,3 @@ graph TD
 | QR code chứa quá nhiều data | Low | Chỉ encode URL verify, không encode toàn bộ data |
 
 ---
-
-> **Next Step**: Bắt đầu thực thi **Task 1 — Move Package & Struct Definitions**.

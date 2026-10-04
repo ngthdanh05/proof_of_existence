@@ -215,10 +215,10 @@ proof-of-existence/
    - Viết hàm `init` (one-time setup) để tạo và share `ProofRegistry`
 
 **Definition of Done (DoD)**:
-- [ ] `sui move build` thành công, không error
-- [ ] Tất cả struct có đúng abilities (`key`, `store`, `copy`, `drop`)
-- [ ] `ProofRegistry` được tạo trong `init` và shared via `transfer::share_object`
-- [ ] Code tuân thủ Move 2024 Edition syntax
+- [x] `sui move build` thành công, không error
+- [x] Tất cả struct có đúng abilities (`key`, `store`, `copy`, `drop`)
+- [x] `ProofRegistry` được tạo trong `init` và shared via `transfer::share_object`
+- [x] Code tuân thủ Move 2024 Edition syntax
 
 ---
 
@@ -264,12 +264,12 @@ proof-of-existence/
    - `registry_total(registry: &ProofRegistry): u64`
 
 **Definition of Done (DoD)**:
-- [ ] `create_proof` tạo ProofObject và transfer cho sender
-- [ ] Không thể tạo proof trùng hash (abort với error code)
-- [ ] `verify_proof` trả về đúng `true/false`
-- [ ] `revoke_proof` chỉ owner mới gọi được, xoá proof khỏi registry
-- [ ] Tất cả event được emit đúng
-- [ ] `sui move build` thành công
+- [x] `create_proof` tạo ProofObject và transfer cho sender
+- [x] Không thể tạo proof trùng hash (abort với error code)
+- [x] `verify_proof` trả về đúng `true/false`
+- [x] `revoke_proof` chỉ owner mới gọi được, xoá proof khỏi registry
+- [x] Tất cả event được emit đúng
+- [x] `sui move build` thành công
 
 ---
 
@@ -306,9 +306,9 @@ proof-of-existence/
    - Gọi revoke bởi address B → expect abort
 
 **Definition of Done (DoD)**:
-- [ ] `sui move test` pass tất cả test cases
-- [ ] Cover ≥ 5 test scenarios (happy path + error cases)
-- [ ] Không có warning khi build
+- [x] `sui move test` pass tất cả test cases
+- [x] Cover ≥ 5 test scenarios (happy path + error cases)
+- [x] Không có warning khi build
 
 ---
 

@@ -1,0 +1,6 @@
+export const NETWORK = (process.env.NEXT_PUBLIC_SUI_NETWORK as "testnet" | "mainnet" | "devnet") || "testnet";
+
+export const PACKAGE_ID = process.env.NEXT_PUBLIC_PACKAGE_ID || "0x0000000000000000000000000000000000000000000000000000000000000000";
+export const REGISTRY_ID = process.env.NEXT_PUBLIC_REGISTRY_ID || "0x0000000000000000000000000000000000000000000000000000000000000000";
+
+export const WALRUS_PUBLISHER_URL = process.env.NEXT_PUBLIC_WALRUS_PUBLISHER_URL || "https://publisher.walrus-testnet.walrus.space";

@@ -7,7 +7,8 @@ import { useState, ReactNode } from "react";
 import "@mysten/dapp-kit/dist/index.css";
 
 const { networkConfig } = createNetworkConfig({
-  testnet: { url: getFullnodeUrl("testnet") },
+  // testnet: { url: getFullnodeUrl("testnet") },
+  testnet: { url: "https://sui-testnet-endpoint.blockvision.org" },
   mainnet: { url: getFullnodeUrl("mainnet") },
   devnet: { url: getFullnodeUrl("devnet") },
 });

@@ -1,19 +1,15 @@
-export interface ProofData {
-  id: string;
-  fileHash: string;
-  owner: string;
-  blobId?: string;
-  timestamp: number;
-}
-
 export interface ProofMetadata {
-  fileName: string;
-  fileSize: number;
-  mimeType: string;
-  createdAt: number;
+  name: string;
+  description: string;
+  location: string;
+  category: string;
 }
 
-export interface CreateProofInput {
-  fileHash: string;
-  blobId?: string;
+export interface ProofData {
+  id: string;          // Sui UID
+  fileHash: string;    // hash: String
+  owner: string;       // owner: address
+  blobId: string;      // blob_id: String
+  timestamp: number;   // created_at: u64
+  metadata?: ProofMetadata;
 }
